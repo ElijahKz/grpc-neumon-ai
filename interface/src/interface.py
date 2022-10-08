@@ -76,7 +76,7 @@ def predict_image():
 
 # Backend client definition
 options = [('grpc.max_message_length', 100 * 1024 * 1024)]
-channel = grpc.insecure_channel("192.168.1.53:50051", options=options)
+channel = grpc.insecure_channel("backend:50051", options=options)
 backend_client = backend_pb2_grpc.BackendStub(channel=channel)
 
 # create a button, then when pressed, will trigger a file chooser
