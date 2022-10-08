@@ -1,0 +1,9 @@
+backend/src/Inference/WilhemNet_86.h5
+backend/src/Inference/__pycache__
+backend/src/Preprocessing/__pycache__
+backend/src/protos
+interface/src/protos
+protos/backend_pb2_grpc.py
+protos/backend_pb2.py
+__pycache__
+
