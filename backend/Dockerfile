@@ -16,6 +16,6 @@ RUN pip install -r requirements.txt
 
 COPY backend/src .
 COPY protos/backend.proto .
-RUN mv ./WilhemNet_86.h5 /Inference/
+RUN mv ./WilhemNet_86.h5 ./Inference/
 
 RUN python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./backend.proto

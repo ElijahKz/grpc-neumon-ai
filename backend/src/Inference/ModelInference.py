@@ -8,7 +8,7 @@ import cv2
 
 
 def load_prediction_model():
-    model_cnn = load_model('./backend/src/inference/WilhemNet_86.h5')
+    model_cnn = load_model('./Inference/WilhemNet_86.h5')
     model_cnn.make_predict_function()
     return model_cnn
 ###------------------------------------------------------------------------------------------------------------
